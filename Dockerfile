@@ -8,4 +8,7 @@ RUN \
     #wget "https://github.com/keeweb/keeweb/releases/download/v1.18.7/KeeWeb-1.18.7.html.zip" --directory-prefix=/tmp && \
     curl -L -o /tmp/keeweb.zip "https://github.com/keeweb/keeweb/releases/download/v1.18.7/KeeWeb-1.18.7.html.zip" && \
     ls /tmp && \
+    df -h / && \
+    rm -rf /usr/share/nginx/html && \
     unzip "/tmp/keeweb.zip" -d /usr/share/nginx/html
+
